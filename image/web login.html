@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)http://127.0.0.1:5500/Advance%20web%20login/index.html? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web login</title>
+    <link rel="stylesheet" href="./web login_files/all.min.css">
+    <link rel="stylesheet" href="./web login_files/style.css">
+</head>
+<body>
+    <div class="containar sign-in-mode">
+        <div class="sing-up">
+            <form onsubmit="validation(event)">
+                <h2 class="title">Sign up</h2>
+                <div class="input-feild"> 
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Username" id="username">
+                    <span class="error__username"></span>
+                </div>
+                <div class="input-feild"> 
+                     <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Password" id="password">
+                </div>
+                <div class="input-feild"> 
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Repeat password" id="repeat__password">
+                    <span p="" class="error__password"></span>
+                </div>
+                <button type="submit" id="sing-up">SIGN UP</button>
+                <p>Or Sign up with social platforms</p>
+                <div class="social__media">
+                 <a href="http://127.0.0.1:5500/Advance%20web%20login/index.html?#">
+                    <i class="fab fa-facebook-f"></i>
+                 </a>
+                 <a href="http://127.0.0.1:5500/Advance%20web%20login/index.html?#">
+                    <i class="fab fa-twitter"></i>
+                 </a>
+                 <a href="http://127.0.0.1:5500/Advance%20web%20login/index.html?#">
+                    <i class="fab fa-google"></i>
+                 </a>
+                 <a href="http://127.0.0.1:5500/Advance%20web%20login/index.html?#">
+                    <i class="fab fa-linkedin-in"></i>
+                 </a>
+                </div>
+            </form>
+         
+
+        </div>
+
+
+
+        <div class="panels__containar">
+            <div class="panels__right">
+                <div class="content">
+                    <h3>One of us?</h3>
+                    <p>Online tutor Finder provides students the best way to reach out the best tutor <br> for them. Know more about us.
+                        <a href="http://127.0.0.1:5500/Advance%20web%20login/index.html?#">here</a>
+                    </p>
+                    <button type="submit" class="btn" id="sign_in_btn">
+                        <a href="http://127.0.0.1:5500/Advance%20web%20login/index.html?#">SIGN IN</a>
+                    </button>
+                </div>
+                <img src="./web login_files/register.svg" alt="image">
+            </div>
+        </div>
+
+
+
+
+   </div>
+
+   <script src="./web login_files/app.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="containar sign-in-mode">
+        <div class="sing-up">
+            <form onsubmit="validation(event)">
+                <h2 class="title">Sign up</h2>
+                <div class="input-feild"> 
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Username" id="username">
+                    <span class="error__username"></span>
+                </div>
+                <div class="input-feild"> 
+                     <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Password" id="password">
+                </div>
+                <div class="input-feild"> 
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Repeat password" id="repeat__password">
+                    <span p class="error__password"></span>
+                </div>
+                <button type="submit" id="sing-up">SIGN UP</button>
+                <p>Or Sign up with social platforms</p>
+                <div class="social__media">
+                 <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                 </a>
+                 <a href="#">
+                    <i class="fab fa-twitter"></i>
+                 </a>
+                 <a href="#">
+                    <i class="fab fa-google"></i>
+                 </a>
+                 <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                 </a>
+                </div>
+            </form>
+         
+
+        </div>
+
+
+
+        <div class="panels__containar">
+            <div class="panels__right">
+                <div class="content">
+                    <h3>One of us?</h3>
+                    <p>Online tutor Finder provides students the best way to reach out the best tutor <br> for them. Know more about us.
+                        <a href="#">here</a>
+                    </p>
+                    <button type="submit" class="btn" id="sign_in_btn">
+                        <a href="#">SIGN IN</a>
+                    </button>
+                </div>
+                <img src="./image/register.svg" alt="image">
+            </div>
+        </div>
+
+
+
+
+   </div>
+
+   <script src="./js/app.js"></script>
+</body>
+</html>
