@@ -35,7 +35,7 @@ body{
 .sing-up{
     margin: 0 auto;
     position: relative;
-    width: 24rem;
+    width: 28rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -149,7 +149,7 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     color: var(--white);
     font-weight: bold;
     align-items: center;
@@ -162,8 +162,7 @@ body{
     max-width: 39rem;
 }
 .btn{
-    width: 9rem;
-    position: relative;
+        position: relative;
     margin-top: 0.5rem;
     border:  2px solid var(--white);
     background-color: var(--app-color);
